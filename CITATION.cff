@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+
+title: "Digital Stratification: The Emergence of Educational Apartheid in the Global Knowledge Economy"
+abstract: >
+  The global knowledge economy has created a new form of educational segregation: 
+  "digital stratification"—the systematic divergence between STEM and humanities 
+  education across continental regions. Our novel Balance Index quantifies 
+  educational equilibrium, revealing unprecedented disparities with profound 
+  implications for democracy and social cohesion.
+
+authors:
+  - family-names: "Kim"
+    given-names: "SeungJin"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+
+version: "1.0.0"
+date-released: "2025-01-20"
+license: "MIT"
+repository-code: "https://github.com/SeungJinKim967/digital-stratification"
+
+keywords:
+  - "educational equity"
+  - "digital divide"
+  - "STEM education"
+  - "humanities crisis"
+  - "balance index"
+  - "educational apartheid"
+
+preferred-citation:
+  type: article
+  title: "Digital Stratification: The Emergence of Educational Apartheid in the Global Knowledge Economy"
+  authors:
+    - family-names: "Kim"
+      given-names: "SeungJin"
+  journal: "Nature Human Behaviour"
+  year: 2025
+  url: "https://github.com/SeungJinKim967/digital-stratification"
