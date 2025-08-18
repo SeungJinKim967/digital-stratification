@@ -1,0 +1,48 @@
+country,region,stem_percent,humanities_percent,balance_index,stem_humanities_ratio,population_millions,gdp_per_capita_usd,year
+China,Asia,47.2,6.8,0.144,6.9,1439,10500,2024
+India,Asia,42.1,7.9,0.188,5.3,1380,2100,2024
+Japan,Asia,41.8,8.2,0.196,5.1,125,39285,2024
+South Korea,Asia,45.3,6.4,0.141,7.1,52,31846,2024
+Singapore,Asia,44.7,7.1,0.159,6.3,6,65233,2024
+Thailand,Asia,39.8,9.2,0.231,4.3,70,7274,2024
+Vietnam,Asia,41.2,8.1,0.197,5.1,97,3694,2024
+Malaysia,Asia,40.5,8.8,0.217,4.6,32,11414,2024
+Indonesia,Asia,38.9,9.7,0.249,4.0,274,4135,2024
+Philippines,Asia,37.2,10.1,0.271,3.7,109,3485,2024
+Germany,Europe,35.1,14.8,0.422,2.4,83,46259,2024
+France,Europe,33.2,15.9,0.479,2.1,67,40493,2024
+United Kingdom,Europe,34.5,14.2,0.412,2.4,67,41030,2024
+Italy,Europe,32.8,16.1,0.491,2.0,60,31952,2024
+Spain,Europe,31.9,16.7,0.523,1.9,47,27057,2024
+Netherlands,Europe,35.8,13.9,0.388,2.6,17,52331,2024
+Sweden,Europe,36.2,13.4,0.370,2.7,10,51648,2024
+Norway,Europe,34.9,14.6,0.418,2.4,5,75420,2024
+Denmark,Europe,35.5,14.1,0.397,2.5,6,60170,2024
+Finland,Europe,37.1,12.8,0.345,2.9,6,48810,2024
+Switzerland,Europe,36.8,13.2,0.359,2.8,9,81867,2024
+Austria,Europe,33.7,15.1,0.448,2.2,9,48104,2024
+Belgium,Europe,32.4,16.3,0.503,2.0,11,42658,2024
+United States,North America,30.8,10.9,0.354,2.8,331,63544,2024
+Canada,North America,28.9,11.6,0.401,2.5,38,43241,2024
+Brazil,Developing Countries,26.1,12.4,0.475,2.1,214,8717,2024
+Mexico,Developing Countries,23.8,13.9,0.584,1.7,129,9946,2024
+Argentina,Developing Countries,25.2,12.8,0.508,2.0,45,10636,2024
+Chile,Developing Countries,27.4,11.8,0.431,2.3,19,15424,2024
+Colombia,Developing Countries,24.9,13.2,0.530,1.9,51,6131,2024
+Peru,Developing Countries,23.1,14.1,0.610,1.6,33,6692,2024
+Russia,Developing Countries,28.7,10.9,0.380,2.6,146,11289,2024
+Turkey,Developing Countries,26.8,12.1,0.452,2.2,84,9126,2024
+Iran,Developing Countries,25.4,12.9,0.508,2.0,84,3291,2024
+Saudi Arabia,Developing Countries,24.6,13.5,0.549,1.8,35,23140,2024
+UAE,Developing Countries,27.1,11.6,0.428,2.3,10,37749,2024
+South Africa,Africa,21.2,10.8,0.509,2.0,60,6001,2024
+Nigeria,Africa,19.8,11.9,0.601,1.7,218,2085,2024
+Kenya,Africa,18.9,12.4,0.656,1.5,54,1838,2024
+Ghana,Africa,17.2,13.1,0.761,1.3,32,2202,2024
+Ethiopia,Africa,16.8,12.9,0.768,1.3,118,856,2024
+Egypt,Africa,22.1,10.2,0.462,2.2,104,3548,2024
+Morocco,Africa,20.4,11.3,0.554,1.8,37,3204,2024
+Algeria,Africa,21.8,10.6,0.486,2.1,44,4115,2024
+Tanzania,Africa,15.9,13.8,0.868,1.2,61,1122,2024
+Uganda,Africa,14.7,14.2,0.966,1.0,47,794,2024
+Rwanda,Africa,16.2,13.5,0.833,1.2,13,822,2024
