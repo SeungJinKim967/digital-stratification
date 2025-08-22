@@ -1,4 +1,4 @@
-   # Digital Stratification: Quantifying Educational Apartheid in the Global Knowledge Economy
+# Digital Stratification: Quantifying Educational Apartheid in the Global Knowledge Economy
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -8,58 +8,54 @@
 
 This repository contains the complete computational framework for reproducing results from our Nature Human Behaviour manuscript: **"Digital education creates algorithmic apartheid between civilizations"**.
 
-Key Findings:
+**Key Findings:**
 - Educational systems worldwide create "algorithmic apartheid" through systematic cognitive separation
 - Asia's extreme STEM emphasis (Balance Index 0.162) vs Europe's balanced approach (0.457) 
 - Strong correlations with democratic capacity (r=0.689) and innovation outcomes (r=0.847)
 - Policy simulations show 182% improvement potential through educational rebalancing
 
-Research Impact
+## Research Impact
 
 Our novel **Balance Index** provides the first standardized international metric for educational equilibrium:
-
 Balance Index = min(STEM%, Humanities%) / max(STEM%, Humanities%)
 
 This framework enables evidence-based educational policy targeting and international comparison.
 
 ## Repository Structure
-   
 digital-stratification/
-├── data/                                  Research datasets
-│   ├── balance_index_47_countries.csv     Main analysis dataset (47 countries)
-│   └── time_series_data.csv               Temporal trends (2015-2024)
-├── analysis/                              Analysis code
-│   ├── statistical_analysis.py            Complete statistical reproduction
-│   ├── generate_figures.py                Publication-quality figures
-│   └── reproduce_results.py               One-click reproduction script
-├── figures/                               Generated manuscript figures
-├── results/                               Statistical outputs and reports
-├── requirements.txt                       Python dependencies
-├── LICENSE                                MIT License
-└── README.md                              This file
-
+├── data/                                 # Research datasets
+│   ├── balance_index_47_countries.csv   # Main analysis dataset (47 countries)
+│   └── time_series_data.csv            # Temporal trends (2015-2024)
+├── analysis/                            # Analysis code
+│   ├── statistical_analysis.py         # Complete statistical reproduction
+│   ├── generate_figures.py             # Publication-quality figures
+│   └── reproduce_results.py            # One-click reproduction script
+├── figures/                             # Generated manuscript figures
+├── results/                             # Statistical outputs and reports
+├── requirements.txt                     # Python dependencies
+├── LICENSE                             # MIT License
+└── README.md                           # This file
 ## Quick Start (For Nature Reviewers)
 
-Complete reproduction in 3 commands:
+**Complete reproduction in 3 commands:**
 
 ```bash
-
-1. Clone repository
+# 1. Clone repository
 git clone https://github.com/SeungJinKim967/digital-stratification.git
 cd digital-stratification
 
-2. Install dependencies
+# 2. Install dependencies
 pip install -r requirements.txt
 
-3. Reproduce ALL results
+# 3. Reproduce ALL results
 cd analysis
 python reproduce_results.py
+Expected output:
 
-**Expected output:**
-- All manuscript statistics reproduced
-- 5 publication-quality figures generated
-- Complete validation report
-- Runtime: 2-3 minutes
+All manuscript statistics reproduced
+5 publication-quality figures generated
+Complete validation report
+Runtime: 2-3 minutes
 
 Detailed Installation
 Prerequisites
@@ -68,18 +64,15 @@ Python 3.8 or higher
 Git
 
 Step-by-step Setup
-from analysis.statistical_analysis import DigitalStratificationAnalysis
-
-analyzer = DigitalStratificationAnalysis()
-regional_stats = analyzer.descriptive_statistics()
 
 Clone the repository:
+git clone https://github.com/SeungJinKim967/digital-stratification.git
+cd digital-stratification
+Create virtual environment (recommended):
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-
 Install dependencies:
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
 Verify installation:
 cd analysis
 python -c "import pandas, numpy, scipy, matplotlib, seaborn; print('All dependencies installed successfully')"
@@ -138,10 +131,7 @@ humanities_percent: Humanities graduates percentage
 democratic_participation_index: Democratic capacity measure
 innovation_capacity_index: Innovation outcomes measure
 
-
-
 Time Series Dataset (time_series_data.csv)
-
 Coverage: 2015-2024 annual data
 Countries: All 47 nations
 Purpose: Temporal trend analysis and policy impact assessment
@@ -167,14 +157,10 @@ Implementation timeline: 3-6-10 year milestones
 
 Results Summary
 Regional Patterns
-| Region | STEM % | Humanities % | Balance Index | Classification |
-|--------|--------|--------------|---------------|----------------|
-| Asia | 44.6 | 7.2 | 0.162 | Crisis |
-| Europe | 33.9 | 15.6 | 0.461 | Sustainable |
-| North America | 29.7 | 11.4 | 0.385 | Caution |
-| Developing Countries | 25.3 | 13.2 | 0.523 | Apparent Balance* |
-| Africa | 20.4 | 11.3 | 0.556 | Constrained Balance* |
 
+RegionSTEM %Humanities %Balance IndexClassificationAsia44.67.20.162CrisisEurope33.915.60.461SustainableNorth America29.711.40.385CautionDeveloping Countries25.313.20.523Apparent Balance*Africa20.411.30.556Constrained Balance*
+
+*Resource-constrained rather than intentional balance
 Key Correlations
 
 Democratic Participation: r=0.689, p<0.01
@@ -184,11 +170,11 @@ Social Trust: r=0.534, p<0.05
 
 Digital Stratification Ratio
 2.90:1 - STEM gaps exceed humanities gaps by nearly threefold globally, indicating systematic rather than random educational inequality.
+
 Troubleshooting
 Common Issues
-
 1. Import errors:
-Ensure you're in the analysis directory
+# Ensure you're in the analysis directory
 cd analysis
 python reproduce_results.py
 2. Missing dependencies:
@@ -196,13 +182,14 @@ pip install --upgrade pandas numpy scipy matplotlib seaborn scikit-learn plotly
 3. Data file not found:
 # Verify data files exist
 ls ../data/
-Should show: balance_index_47_countries.csv, time_series_data.csv
-4. Figure generation fails:
-Create figures directory
+# Should show: balance_index_47_countries.csv, time_series_data.csv
+# Create figures directory
 mkdir -p ../figures
 cd analysis
-cd analysis
-python -c "import pandas, numpy, scipy, matplotlib, seaborn; print('All dependencies installed successfully')"
+python generate_figures.py
+
+System Requirements
+
 RAM: Minimum 4GB (8GB recommended)
 Storage: 500MB free space
 Python: 3.8+ (tested on 3.8, 3.9, 3.10, 3.11)
@@ -249,3 +236,6 @@ v0.9.0 - Complete reproducibility framework
 v0.8.0 - Statistical analysis finalization
 v0.7.0 - Data validation and cleaning
 v0.6.0 - Balance Index development and testing
+
+
+
