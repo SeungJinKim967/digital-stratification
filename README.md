@@ -55,13 +55,11 @@ pip install -r requirements.txt
 cd analysis
 python reproduce_results.py
 
-Expected output:
-
-All manuscript statistics reproduced
-5 publication-quality figures generated
-Complete validation report
-Runtime: 2-3 minutes
-
+**Expected output:**
+- All manuscript statistics reproduced
+- 5 publication-quality figures generated
+- Complete validation report
+- Runtime: 2-3 minutes
 
 Detailed Installation
 Prerequisites
@@ -70,15 +68,18 @@ Python 3.8 or higher
 Git
 
 Step-by-step Setup
+from analysis.statistical_analysis import DigitalStratificationAnalysis
+
+analyzer = DigitalStratificationAnalysis()
+regional_stats = analyzer.descriptive_statistics()
 
 Clone the repository:
-git clone https://github.com/SeungJinKim967/digital-stratification.git
-cd digital-stratification
-Create virtual environment (recommended):
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+
 Install dependencies:
-pip install -r requirements.txt
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 Verify installation:
 cd analysis
 python -c "import pandas, numpy, scipy, matplotlib, seaborn; print('All dependencies installed successfully')"
@@ -200,9 +201,8 @@ Should show: balance_index_47_countries.csv, time_series_data.csv
 Create figures directory
 mkdir -p ../figures
 cd analysis
-python generate_figures.py
-System Requirements
-
+cd analysis
+python -c "import pandas, numpy, scipy, matplotlib, seaborn; print('All dependencies installed successfully')"
 RAM: Minimum 4GB (8GB recommended)
 Storage: 500MB free space
 Python: 3.8+ (tested on 3.8, 3.9, 3.10, 3.11)
