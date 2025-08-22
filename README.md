@@ -1,10 +1,10 @@
- Digital Stratification: Quantifying Educational Apartheid in the Global Knowledge Economy
+   # Digital Stratification: Quantifying Educational Apartheid in the Global Knowledge Economy
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Research Status](https://img.shields.io/badge/status-submitted%20to%20Nature-green.svg)](https://github.com/SeungJinKim967/digital-stratification)
 
-1. Overview
+## Overview
 
 This repository contains the complete computational framework for reproducing results from our Nature Human Behaviour manuscript: **"Digital education creates algorithmic apartheid between civilizations"**.
 
@@ -22,7 +22,7 @@ Balance Index = min(STEM%, Humanities%) / max(STEM%, Humanities%)
 
 This framework enables evidence-based educational policy targeting and international comparison.
 
-2. Repository Structure
+## Repository Structure
    
 digital-stratification/
 ├── data/                                  Research datasets
@@ -38,7 +38,7 @@ digital-stratification/
 ├── LICENSE                                MIT License
 └── README.md                              This file
 
-Quick Start (For Nature Reviewers)
+## Quick Start (For Nature Reviewers)
 
 Complete reproduction in 3 commands:
 
@@ -61,6 +61,7 @@ All manuscript statistics reproduced
 5 publication-quality figures generated
 Complete validation report
 Runtime: 2-3 minutes
+
 
 Detailed Installation
 Prerequisites
