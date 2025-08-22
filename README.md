@@ -25,18 +25,18 @@ This framework enables evidence-based educational policy targeting and internati
 2. Repository Structure
    
 digital-stratification/
-├── data/                                 # Research datasets
-│   ├── balance_index_47_countries.csv   # Main analysis dataset (47 countries)
-│   └── time_series_data.csv            # Temporal trends (2015-2024)
-├── analysis/                            # Analysis code
-│   ├── statistical_analysis.py         # Complete statistical reproduction
-│   ├── generate_figures.py             # Publication-quality figures
-│   └── reproduce_results.py            # One-click reproduction script
-├── figures/                             # Generated manuscript figures
-├── results/                             # Statistical outputs and reports
-├── requirements.txt                     # Python dependencies
-├── LICENSE                             # MIT License
-└── README.md                           # This file
+├── data/                                  Research datasets
+│   ├── balance_index_47_countries.csv     Main analysis dataset (47 countries)
+│   └── time_series_data.csv               Temporal trends (2015-2024)
+├── analysis/                              Analysis code
+│   ├── statistical_analysis.py            Complete statistical reproduction
+│   ├── generate_figures.py                Publication-quality figures
+│   └── reproduce_results.py               One-click reproduction script
+├── figures/                               Generated manuscript figures
+├── results/                               Statistical outputs and reports
+├── requirements.txt                       Python dependencies
+├── LICENSE                                MIT License
+└── README.md                              This file
 
 Quick Start (For Nature Reviewers)
 
@@ -186,7 +186,7 @@ Troubleshooting
 Common Issues
 
 1. Import errors:
-# Ensure you're in the analysis directory
+Ensure you're in the analysis directory
 cd analysis
 python reproduce_results.py
 2. Missing dependencies:
@@ -194,7 +194,7 @@ pip install --upgrade pandas numpy scipy matplotlib seaborn scikit-learn plotly
 3. Data file not found:
 # Verify data files exist
 ls ../data/
-# Should show: balance_index_47_countries.csv, time_series_data.csv
+Should show: balance_index_47_countries.csv, time_series_data.csv
 4. Figure generation fails:
 Create figures directory
 mkdir -p ../figures
