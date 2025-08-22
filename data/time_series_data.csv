@@ -1,0 +1,31 @@
+country,region,year,stem_percent,humanities_percent,balance_index
+China,Asia,2015,40.1,8.9,0.222
+China,Asia,2016,41.2,8.6,0.209
+China,Asia,2017,42.1,8.2,0.195
+China,Asia,2018,42.8,7.9,0.185
+China,Asia,2019,43.4,7.6,0.175
+China,Asia,2020,43.9,7.3,0.166
+China,Asia,2021,44.3,7.1,0.160
+China,Asia,2022,44.6,6.9,0.155
+China,Asia,2023,44.9,6.8,0.151
+China,Asia,2024,45.2,6.8,0.150
+South Korea,Asia,2015,42.8,7.2,0.168
+South Korea,Asia,2016,43.5,6.9,0.159
+South Korea,Asia,2017,44.1,6.7,0.152
+South Korea,Asia,2018,44.6,6.5,0.146
+South Korea,Asia,2019,45.2,6.3,0.139
+South Korea,Asia,2020,45.7,6.1,0.133
+South Korea,Asia,2021,46.1,6.0,0.130
+South Korea,Asia,2022,46.5,5.9,0.127
+South Korea,Asia,2023,46.8,5.9,0.126
+South Korea,Asia,2024,47.1,5.9,0.125
+Germany,Europe,2015,34.1,15.8,0.463
+Germany,Europe,2016,34.0,15.9,0.468
+Germany,Europe,2017,34.2,16.0,0.468
+Germany,Europe,2018,34.1,16.1,0.472
+Germany,Europe,2019,34.3,16.0,0.467
+Germany,Europe,2020,34.2,16.1,0.471
+Germany,Europe,2021,34.1,16.2,0.475
+Germany,Europe,2022,34.3,16.1,0.469
+Germany,Europe,2023,34.2,16.1,0.471
+Germany,Europe,2024,34.2,16.1,0.471
