@@ -99,8 +99,11 @@ cd analysis
 python -c "
 from statistical_analysis import DigitalStratificationAnalysis
 analyzer = DigitalStratificationAnalysis()
-print(f'Asia Balance Index: {analyzer.main_data[analyzer.main_data[\"region\"]==\"Asia\"][\"balance_index\"].mean():.3f}')
-"
+
+### Balance Index Calculator Output
+
+```python
+from analysis.statistical_analysis import
 Key Results Reproduction
 Manuscript Table 1: Continental Patterns
 from analysis.statistical_analysis import DigitalStratificationAnalysis
