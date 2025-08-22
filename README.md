@@ -1,27 +1,29 @@
-# Digital Stratification: Quantifying Educational Apartheid in the Global Knowledge Economy
+ Digital Stratification: Quantifying Educational Apartheid in the Global Knowledge Economy
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Research Status](https://img.shields.io/badge/status-submitted%20to%20Nature-green.svg)](https://github.com/SeungJinKim967/digital-stratification)
 
-## Overview
+1. Overview
 
 This repository contains the complete computational framework for reproducing results from our Nature Human Behaviour manuscript: **"Digital education creates algorithmic apartheid between civilizations"**.
 
-**Key Findings:**
+Key Findings:
 - Educational systems worldwide create "algorithmic apartheid" through systematic cognitive separation
 - Asia's extreme STEM emphasis (Balance Index 0.162) vs Europe's balanced approach (0.457) 
 - Strong correlations with democratic capacity (r=0.689) and innovation outcomes (r=0.847)
 - Policy simulations show 182% improvement potential through educational rebalancing
 
-## Research Impact
+Research Impact
 
 Our novel **Balance Index** provides the first standardized international metric for educational equilibrium:
 
 Balance Index = min(STEM%, Humanities%) / max(STEM%, Humanities%)
+
 This framework enables evidence-based educational policy targeting and international comparison.
 
-## Repository Structure
+2. Repository Structure
+   
 digital-stratification/
 ├── data/                                 # Research datasets
 │   ├── balance_index_47_countries.csv   # Main analysis dataset (47 countries)
@@ -36,19 +38,20 @@ digital-stratification/
 ├── LICENSE                             # MIT License
 └── README.md                           # This file
 
-## Quick Start (For Nature Reviewers)
+Quick Start (For Nature Reviewers)
 
-**Complete reproduction in 3 commands:**
+Complete reproduction in 3 commands:
 
 ```bash
-# 1. Clone repository
+
+1. Clone repository
 git clone https://github.com/SeungJinKim967/digital-stratification.git
 cd digital-stratification
 
-# 2. Install dependencies
+2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Reproduce ALL results
+3. Reproduce ALL results
 cd analysis
 python reproduce_results.py
 
@@ -162,8 +165,14 @@ Implementation timeline: 3-6-10 year milestones
 
 Results Summary
 Regional Patterns
-RegionSTEM %Humanities %Balance IndexClassificationAsia44.67.20.162CrisisEurope33.915.60.461SustainableNorth America29.711.40.385CautionDeveloping Countries25.313.20.523Apparent Balance*Africa20.411.30.556Constrained Balance*
-*Resource-constrained rather than intentional balance
+| Region | STEM % | Humanities % | Balance Index | Classification |
+|--------|--------|--------------|---------------|----------------|
+| Asia | 44.6 | 7.2 | 0.162 | Crisis |
+| Europe | 33.9 | 15.6 | 0.461 | Sustainable |
+| North America | 29.7 | 11.4 | 0.385 | Caution |
+| Developing Countries | 25.3 | 13.2 | 0.523 | Apparent Balance* |
+| Africa | 20.4 | 11.3 | 0.556 | Constrained Balance* |
+
 Key Correlations
 
 Democratic Participation: r=0.689, p<0.01
@@ -187,7 +196,7 @@ pip install --upgrade pandas numpy scipy matplotlib seaborn scikit-learn plotly
 ls ../data/
 # Should show: balance_index_47_countries.csv, time_series_data.csv
 4. Figure generation fails:
-# Create figures directory
+Create figures directory
 mkdir -p ../figures
 cd analysis
 python generate_figures.py
