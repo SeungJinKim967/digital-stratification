@@ -1,15 +1,15 @@
 country,region,stem_percent,humanities_percent,balance_index,stem_humanities_ratio,population_millions,gdp_per_capita_usd,year
-China,Asia,47.2,6.8,0.144,6.9,1439,10500,2024
+China,Asia,45.2,6.8,0.150,6.6,1439,10500,2024
 India,Asia,42.1,7.9,0.188,5.3,1380,2100,2024
 Japan,Asia,41.8,8.2,0.196,5.1,125,39285,2024
-South Korea,Asia,45.3,6.4,0.141,7.1,52,31846,2024
+South Korea,Asia,47.1,5.9,0.125,8.0,52,31846,2024
 Singapore,Asia,44.7,7.1,0.159,6.3,6,65233,2024
 Thailand,Asia,39.8,9.2,0.231,4.3,70,7274,2024
 Vietnam,Asia,41.2,8.1,0.197,5.1,97,3694,2024
 Malaysia,Asia,40.5,8.8,0.217,4.6,32,11414,2024
 Indonesia,Asia,38.9,9.7,0.249,4.0,274,4135,2024
 Philippines,Asia,37.2,10.1,0.271,3.7,109,3485,2024
-Germany,Europe,35.1,14.8,0.422,2.4,83,46259,2024
+Germany,Europe,34.2,16.1,0.471,2.1,83,46259,2024
 France,Europe,33.2,15.9,0.479,2.1,67,40493,2024
 United Kingdom,Europe,34.5,14.2,0.412,2.4,67,41030,2024
 Italy,Europe,32.8,16.1,0.491,2.0,60,31952,2024
