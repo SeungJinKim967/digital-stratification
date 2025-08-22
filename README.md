@@ -1,4 +1,4 @@
-# Digital Stratification: Quantifying Educational Apartheid in the Global Knowledge Economy
+markdown# Digital Stratification: Quantifying Educational Apartheid in the Global Knowledge Economy
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -18,6 +18,7 @@ This repository contains the complete computational framework for reproducing re
 
 Our novel **Balance Index** provides the first standardized international metric for educational equilibrium:
 Balance Index = min(STEM%, Humanities%) / max(STEM%, Humanities%)
+
 This framework enables evidence-based educational policy targeting and international comparison.
 
 ## Repository Structure
@@ -34,6 +35,7 @@ digital-stratification/
 ├── requirements.txt                     # Python dependencies
 ├── LICENSE                             # MIT License
 └── README.md                           # This file
+
 ## Quick Start (For Nature Reviewers)
 
 **Complete reproduction in 3 commands:**
@@ -65,19 +67,26 @@ Git
 Step-by-step Setup
 
 Clone the repository:
-git clone https://github.com/SeungJinKim967/digital-stratification.git
+
+bashgit clone https://github.com/SeungJinKim967/digital-stratification.git
 cd digital-stratification
+
 Create virtual environment (recommended):
-python -m venv venv
+
+bashpython -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+
 Install dependencies:
-pip install -r requirements.txt
+
+bashpip install -r requirements.txt
+
 Verify installation:
-cd analysis
+
+bashcd analysis
 python -c "import pandas, numpy, scipy, matplotlib, seaborn; print('All dependencies installed successfully')"
 Usage Instructions
 Option 1: Complete Reproduction (Recommended)
-cd analysis
+bashcd analysis
 python reproduce_results.py
 This generates:
 
@@ -88,13 +97,13 @@ Comprehensive reproduction report
 
 Option 2: Individual Components
 Statistical Analysis:
-cd analysis
+bashcd analysis
 python statistical_analysis.py
 Figure Generation:
-cd analysis
+bashcd analysis
 python generate_figures.py
 Balance Index Calculator:
-cd analysis
+pythoncd analysis
 python -c "
 from statistical_analysis import DigitalStratificationAnalysis
 analyzer = DigitalStratificationAnalysis()
@@ -102,16 +111,16 @@ print(f'Asia Balance Index: {analyzer.main_data[analyzer.main_data[\"region\"]==
 "
 Key Results Reproduction
 Manuscript Table 1: Continental Patterns
-from analysis.statistical_analysis import DigitalStratificationAnalysis
+pythonfrom analysis.statistical_analysis import DigitalStratificationAnalysis
 
 analyzer = DigitalStratificationAnalysis()
 regional_stats = analyzer.descriptive_statistics()
 Manuscript Table 2: Correlation Analysis
-correlations = analyzer.correlation_analysis()
+pythoncorrelations = analyzer.correlation_analysis()
 # Democratic Participation: r=0.689, p<0.01
 # Innovation Capacity: r=0.847, p<0.001
 Manuscript Figures 1-5
-from analysis.generate_figures import FigureGenerator
+pythonfrom analysis.generate_figures import FigureGenerator
 
 fig_gen = FigureGenerator()
 fig_gen.generate_all_figures()
@@ -138,7 +147,7 @@ Purpose: Temporal trend analysis and policy impact assessment
 Methodology
 Balance Index Calculation
 The Balance Index quantifies educational equilibrium using the ratio of minimum to maximum percentages between STEM and humanities education:
-def calculate_balance_index(stem_percent, humanities_percent):
+pythondef calculate_balance_index(stem_percent, humanities_percent):
     return min(stem_percent, humanities_percent) / max(stem_percent, humanities_percent)
 Statistical Framework
 
@@ -170,17 +179,17 @@ Digital Stratification Ratio
 Troubleshooting
 Common Issues
 1. Import errors:
-# Ensure you're in the analysis directory
+bash# Ensure you're in the analysis directory
 cd analysis
 python reproduce_results.py
 2. Missing dependencies:
-pip install --upgrade pandas numpy scipy matplotlib seaborn scikit-learn plotly
+bashpip install --upgrade pandas numpy scipy matplotlib seaborn scikit-learn plotly
 3. Data file not found:
-# Verify data files exist
+bash# Verify data files exist
 ls ../data/
 # Should show: balance_index_47_countries.csv, time_series_data.csv
 4. Figure generation fails:
-# Create figures directory
+bash# Create figures directory
 mkdir -p ../figures
 cd analysis
 python generate_figures.py
@@ -193,7 +202,7 @@ OS: Windows 10+, macOS 10.14+, Ubuntu 18.04+
 
 Citation
 If you use this research or codebase, please cite:
-@article{kim2024digital,
+bibtex@article{kim2024digital,
   title={Digital education creates algorithmic apartheid between civilizations},
   author={Kim, Seung Jin},
   journal={Nature Human Behaviour},
